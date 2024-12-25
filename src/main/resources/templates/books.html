@@ -2,6 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Books</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}" />
 </head>
 <body>
 <h1>Books</h1>
@@ -11,7 +12,6 @@
         <th>Author</th>
         <th>Year</th>
         <th>Quantity</th>
-        <th>Actions</th>
     </tr>
     <tr th:each="book : ${books}">
         <td th:text="${book.title}"></td>
@@ -20,5 +20,8 @@
         <td th:text="${book.quantity}"></td>
     </tr>
 </table>
+<p>
+    <a href="home.html" th:href="@{/}">Return to home</a>
+</p>
 </body>
 </html>

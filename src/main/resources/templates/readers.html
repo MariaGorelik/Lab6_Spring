@@ -2,6 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
   <title>Readers</title>
+  <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}" />
 </head>
 <body>
 <h1>Readers</h1>
@@ -19,5 +20,8 @@
     <td th:text="${reader.birthYear}"></td>
   </tr>
 </table>
+<p>
+  <a href="home.html" th:href="@{/}">Return to home</a>
+</p>
 </body>
 </html>
