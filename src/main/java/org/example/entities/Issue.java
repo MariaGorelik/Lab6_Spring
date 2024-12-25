@@ -1,9 +1,8 @@
-package org.example;
+package org.example.entities;
 
 import jakarta.persistence.*;
 
 import java.util.Date;
-import org.example.IssueDetailsDTO;
 
 @Entity
 @Table(name = "ISSUES")

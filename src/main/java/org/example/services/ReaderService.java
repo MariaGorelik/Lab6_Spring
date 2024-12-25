@@ -1,5 +1,7 @@
-package org.example;
+package org.example.services;
 
+import org.example.entities.Reader;
+import org.example.repositories.ReaderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

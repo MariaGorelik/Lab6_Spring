@@ -1,5 +1,7 @@
-package org.example;
+package org.example.services;
 
+import org.example.entities.IssueDetailsDTO;
+import org.example.repositories.IssueRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
