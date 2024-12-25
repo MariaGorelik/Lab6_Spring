@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Issues</title>
+</head>
+<body>
+<h1>Issues</h1>
+<table>
+    <tr>
+        <th>Reader name</th>
+        <th>Book title</th>
+        <th>Issue date</th>
+        <th>Return date</th>
+    </tr>
+    <tr th:each="issue : ${issues}">
+        <td th:text="${issue.readerName}"></td>
+        <td th:text="${issue.bookTitle}"></td>
+        <td th:text="${issue.issueDate}"></td>
+        <td th:text="${issue.returnDate}"></td>
+    </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Readers</title>
+</head>
+<body>
+<h1>Readers</h1>
+<table>
+  <tr>
+    <th>Surname</th>
+    <th>Name</th>
+    <th>Patronymjc</th>
+    <th>Birth year</th>
+  </tr>
+  <tr th:each="reader : ${readers}">
+    <td th:text="${reader.surname}"></td>
+    <td th:text="${reader.name}"></td>
+    <td th:text="${reader.patronymic}"></td>
+    <td th:text="${reader.birthYear}"></td>
+  </tr>
+</table>
+</body>
+</html>
