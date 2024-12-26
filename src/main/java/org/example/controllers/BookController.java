@@ -22,22 +22,4 @@ public class BookController {
         model.addAttribute("books", books);
         return "books";
     }
-
-    /*@GetMapping("/unprocessed")
-    public String listUnprocessedRequests(Model model) {
-        model.addAttribute("requests", requestService.getUnprocessedRequests());
-        return "requests";
-    }*/
-
-    /*@GetMapping("/{id}")
-    public String viewBook(@PathVariable("id") int id, Model model) {
-        model.addAttribute("book", bookService.getBookById(id));
-        return "book";
-    }
-
-    @PostMapping("/{id}/process")
-    public String processRequest(@PathVariable("id") int id) {
-        requestService.processRequest(id);
-        return "redirect:/requests";
-    }*/
 }

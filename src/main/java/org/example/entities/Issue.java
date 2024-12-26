@@ -10,9 +10,6 @@ import java.util.Date;
         @NamedQuery(name = "findAllIssues", query = "SELECT i FROM Issue i"),
         @NamedQuery(name = "findIssuesByReader", query = "SELECT i FROM Issue i WHERE i.reader = :reader"),
         @NamedQuery(name = "findIssuesByBook", query = "SELECT i FROM Issue i WHERE i.book = :book"),
-        /*@NamedQuery(name = "findIssuesWithDetails",
-                query = "SELECT NEW IssueDetailsDTO(i.issueId, i.reader.name, i.book.title, i.issueDate, i.returnDate) " +
-                        "FROM Issue i")*/
 })
 public class Issue {
 
